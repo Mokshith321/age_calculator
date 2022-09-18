@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age_Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blurrybackground" id="blurbg">
+    <div class="completebox">
+        <div class="heading">Age Calculator</div>
+        <div class="uiux">Enter your DOB:</div>
+        <div class="form">
+            <div class="input-class">
+            <input type="number" max="31" class="input" id="input-date" name="date" required>
+            <div  class="label-name"><span class="name">Date</span></div>
+        </div>
+            <div class="input-class">
+            <input type="number" max="12" class="input" id="input-month" name="month" required>
+            <div  class="label-name"><span class="name">Month</span></div>
+        </div>
+            <div class="input-class">
+            <input type="number" class="input" id="input-year" name="year" required>
+            <div  class="label-name"><span class="name">Year</span></div>
+        </div>
+        </div>
+        <button class="btn" id="btn">Submit</button>
+    </div>
+</div>
+    <div class="age-displayer" id="display">
+        <div class="sentences">You are <span class="age-elements" id="yrs"></span> years <span class="age-elements" id="mns"></span> months <span class="age-elements" id="days"></span> days old.</div>
+        <button id="resetbtn">Reset</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
